@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.embed.swing.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controle.Configuration">
+   <children>
+      <Separator prefWidth="200.0" />
+      <Line disable="true" endX="200.0" layoutX="200.0" layoutY="62.0" startX="-200.0" strokeWidth="2.0">
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </Line>
+      <Text fill="#835ce4" layoutX="136.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Configuration" wrappingWidth="200.0">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <Text layoutX="53.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="101.0" fitWidth="120.0" layoutX="69.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Etudiant.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="#2d0f79" layoutX="75.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type de réfrigérateur :" wrappingWidth="277.0">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <Line disable="true" endX="150.0" layoutX="200.0" layoutY="136.0" startX="-150.0" strokeWidth="2.0">
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </Line>
+      <ImageView fitHeight="101.0" fitWidth="120.0" layoutX="214.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Familial.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="etudiant" layoutX="69.0" layoutY="310.0" mnemonicParsing="false" style="-fx-background-color: #E6E6FA;" text="Etudiant" textFill="#2985e1">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="familial" layoutX="236.0" layoutY="310.0" mnemonicParsing="false" style="-fx-background-color: #E6E6FA;" text="Familial" textFill="#2985e1">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Text fill="#2d0f79" layoutX="65.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre de personnes :  " wrappingWidth="285.0">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <Line disable="true" endX="150.0" layoutX="200.0" layoutY="416.0" startX="-150.0" strokeWidth="2.0">
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </Line>
+      <Button fx:id="terminerConfiguration" layoutX="100.0" layoutY="502.0" mnemonicParsing="false" onAction="#terminerConfiguration" prefHeight="45.0" prefWidth="200.0" style="-fx-background-color: pink;" text="Terminer" textFill="#0d5da8">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <TextField fx:id="nbPersonne" alignment="CENTER" layoutX="100.0" layoutY="427.0" onAction="#entrerNbPersonne" prefHeight="45.0" prefWidth="200.0" promptText="Entrez 1-10" style="-fx-background-color: lightblue;">
+         <font>
+            <Font name="System Font" size="24.0" />
+         </font>
+      </TextField>
+   </children>
+</Pane>

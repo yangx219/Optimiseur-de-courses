@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.embed.swing.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controle.Refrigerateur">
+
+   <children>
+      <Line disable="true" endX="200.0" layoutX="200.0" layoutY="63.0" startX="-200.0" strokeWidth="2.0">
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </Line>
+      <Text fill="#835ce4" layoutX="123.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Réfrigérateur" wrappingWidth="177.0">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+
+
+      <Button fx:id="revenirArriereRefrigerateur" ellipsisString="&lt;" layoutX="14.0" layoutY="5.0" mnemonicParsing="false" onAction="#allerPageAccueil" prefHeight="45.0" prefWidth="26.0" style="-fx-background-color: lightblue; -fx-background-radius: 50;" text="&lt;" textFill="#47804d">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="ajouterAlimentRefrigerateur" layoutX="331.0" layoutY="5.0" mnemonicParsing="false" onAction="#allerPageAjouterAliment" style="-fx-background-color: yellow; -fx-background-radius: 50;" text="+" textFill="#47804d">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Line disable="true" endX="150.0" layoutX="302.0" layoutY="237.0" rotate="90.0" startX="-200.0" strokeWidth="2.0">
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </Line>
+      <Line disable="true" endX="75.0" layoutX="200.0" layoutY="182.0" startX="-200.0" strokeWidth="2.0">
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </Line>
+      <Line disable="true" endX="200.0" layoutX="200.0" layoutY="410.0" startX="-200.0" strokeWidth="2.0">
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </Line>
+      <VBox layoutX="277.0" layoutY="62.0" prefHeight="352.0" prefWidth="125.0">
+         <children>
+            <GridPane fx:id="Bouteilles" gridLinesVisible="true" prefHeight="367.0" prefWidth="117.0" style="-fx-background-color: lightblue; -fx-border-color: blue;" VBox.vgrow="ALWAYS">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="61.0" minWidth="10.0" prefWidth="60.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="61.0" minWidth="10.0" prefWidth="61.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <VBox.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </VBox.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </GridPane>
+         </children>
+      </VBox>
+      <GridPane fx:id="Fruits_et_legumes" gridLinesVisible="true" layoutY="411.0" opacity="0.75" prefHeight="189.0" prefWidth="400.0" style="-fx-background-color: lightgreen; visibility: red;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="101.0" minWidth="10.0" prefWidth="101.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="101.0" minWidth="10.0" prefWidth="99.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <GridPane fx:id="Viandes" gridLinesVisible="true" layoutY="184.0" opacity="0.57" prefHeight="224.0" prefWidth="277.0" style="-fx-background-color: pink; visibility: red;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <GridPane fx:id="Pates" gridLinesVisible="true" layoutX="-1.0" layoutY="65.0" prefHeight="115.0" prefWidth="277.0" style="-fx-background-color: lightyellow; visibility: red;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+   </children>
+</AnchorPane>

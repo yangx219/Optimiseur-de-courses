@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.embed.swing.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-image: #77bee4;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controle.Accueil">
+
+   <children>
+      <Separator prefWidth="200.0" />
+      <Line disable="true" endX="200.0" layoutX="200.0" layoutY="62.0" startX="-200.0" strokeWidth="2.0">
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </Line>
+      <Text fill="#835ce4" layoutX="150.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accueil" wrappingWidth="101.0">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <BorderPane layoutX="112.0" layoutY="135.0" prefHeight="94.0" prefWidth="162.0">
+         <center>
+            <ImageView id="2" fitHeight="147.0" fitWidth="99.0" pickOnBounds="true" preserveRatio="true" style="visibility: black;" BorderPane.alignment="CENTER">
+               <cursor>
+                  <Cursor fx:constant="H_RESIZE" />
+               </cursor>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+               <image>
+                  <Image url="@../images/Refrigerateur.jpg" />
+               </image>
+            </ImageView>
+         </center>
+      </BorderPane>
+      <BorderPane layoutX="54.0" layoutY="343.0" prefHeight="147.0" prefWidth="139.0">
+         <left>
+            <ImageView id="2" fitHeight="122.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true" style="visibility: black;" BorderPane.alignment="CENTER">
+               <cursor>
+                  <Cursor fx:constant="H_RESIZE" />
+               </cursor>
+               <image>
+                  <Image url="@../images/Recettes.jpg" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </ImageView>
+         </left>
+      </BorderPane>
+      <BorderPane layoutX="227.0" layoutY="343.0" prefHeight="147.0" prefWidth="139.0">
+         <center>
+            <ImageView id="2" fitHeight="103.0" fitWidth="114.0" pickOnBounds="true" preserveRatio="true" style="visibility: black;" BorderPane.alignment="CENTER">
+               <cursor>
+                  <Cursor fx:constant="H_RESIZE" />
+               </cursor>
+               <image>
+                  <Image url="@../images/chariot.jpg" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </ImageView>
+         </center>
+      </BorderPane>
+      <Text fill="#6b39eb" layoutX="125.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-stroke-line-join: blue;" wrappingWidth="151.0">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <Button fx:id="refrigerateur" layoutX="112.0" layoutY="285.0" mnemonicParsing="false" onAction="#allerPageRefrigerateur" style="-fx-background-color: #E6E6FA;" text="Réfrigérateur" textFill="#2985e1">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="recettes" layoutX="31.0" layoutY="475.0" mnemonicParsing="false" onAction="#allerPageRecettes" style="-fx-background-color: #E6E6FA;" text="Recettes" textFill="#2985e1">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="course" layoutX="251.0" layoutY="475.0" mnemonicParsing="false" onAction="#allerPageCourse" style="-fx-background-color: #E6E6FA;" text="Course" textFill="#2985e1">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

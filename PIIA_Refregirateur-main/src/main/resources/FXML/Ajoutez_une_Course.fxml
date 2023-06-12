@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.embed.swing.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controle.AjouterCourse">
+   <children>
+      <Separator prefWidth="200.0" />
+      <Line disable="true" endX="200.0" layoutX="200.0" layoutY="62.0" startX="-200.0" strokeWidth="2.0">
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </Line>
+      <Text fill="#835ce4" layoutX="102.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajoutez une Aliment" wrappingWidth="240.0">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <Text fill="#3e0b8a" fontSmoothingType="LCD" layoutX="63.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom" wrappingWidth="137.0">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <TextField fx:id="nomAjouterAliment" layoutX="63.0" layoutY="126.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="35.0" prefWidth="274.0" promptText="Nom de Aliment" style="-fx-background-color: lightyellow; -fx-border-color: blue;" text="Oignon">
+         <font>
+            <Font name="System Font" size="18.0" />
+         </font></TextField>
+      <Button fx:id="validerAjouterAliment" layoutX="147.0" layoutY="491.0" mnemonicParsing="false" onAction="#validerAjouterAliment" style="-fx-background-color: lightblue;" text="Valider" textFill="#2985e1">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="revenirArriereAjouterAliment" ellipsisString="&lt;" layoutX="14.0" layoutY="8.0" mnemonicParsing="false" onAction="#allerPageListeRecette" prefHeight="45.0" prefWidth="26.0" style="-fx-background-color: lightblue; -fx-background-radius: 50;" text="&lt;" textFill="#47804d">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Text fill="#3e0b8a" fontSmoothingType="LCD" layoutX="61.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type" wrappingWidth="126.0">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <TextField fx:id="typeAjouterAliment" layoutX="63.0" layoutY="222.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="35.0" prefWidth="274.0" promptText="Fruits et légumes" style="-fx-background-color: lightyellow; -fx-border-color: blue;" text="Fruits et légumes">
+         <font>
+            <Font name="System Font" size="18.0" />
+         </font>
+      </TextField>
+      <Text fill="#3e0b8a" fontSmoothingType="LCD" layoutX="61.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Taille" wrappingWidth="126.0">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <TextField fx:id="tailleAjouterAliment" alignment="CENTER" layoutX="63.0" layoutY="319.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="35.0" prefWidth="274.0" promptText="Nom de Recette" style="-fx-background-color: lightyellow; -fx-border-color: blue;" text="1">
+         <font>
+            <Font name="System Font" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="uniteAjouterAliment" alignment="CENTER" layoutX="63.0" layoutY="421.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="35.0" prefWidth="274.0" promptText="Nom de Recette" style="-fx-background-color: lightyellow; -fx-border-color: blue;" text="1">
+         <font>
+            <Font name="System Font" size="18.0" />
+         </font>
+      </TextField>
+      <Text fill="#3e0b8a" fontSmoothingType="LCD" layoutX="61.0" layoutY="399.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unité d'achat" wrappingWidth="159.0">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>

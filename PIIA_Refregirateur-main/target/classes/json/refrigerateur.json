@@ -1,0 +1,51 @@
+[ {
+  "nom" : "Pomme de terre",
+  "type" : "Fruits et légumes",
+  "taille" : 1,
+  "unite" : 1
+}, {
+  "nom" : "Oeuf",
+  "type" : "Viandes",
+  "taille" : 1,
+  "unite" : 1
+}, {
+  "nom" : "vermicelle",
+  "type" : "Pates",
+  "taille" : 1,
+  "unite" : 1
+}, {
+  "nom" : "Lardon",
+  "type" : "Viandes",
+  "taille" : 1,
+  "unite" : 1
+}, {
+  "nom" : "Blanc de poulet",
+  "type" : "Viandes",
+  "taille" : 1,
+  "unite" : 1
+}, {
+  "nom" : "Sauce soja",
+  "type" : "Bouteilles",
+  "taille" : 1,
+  "unite" : 1
+}, {
+  "nom" : "Poireaux",
+  "type" : "Fruits et légumes",
+  "taille" : 1,
+  "unite" : 1
+}, {
+  "nom" : "fromage",
+  "type" : "Fruits et légumes",
+  "taille" : 1,
+  "unite" : 1
+}, {
+  "nom" : "lait",
+  "type" : "Bouteilles",
+  "taille" : 1,
+  "unite" : 1
+}, {
+  "nom" : "Oeuf",
+  "type" : "Viandes",
+  "taille" : 1,
+  "unite" : 1
+} ]

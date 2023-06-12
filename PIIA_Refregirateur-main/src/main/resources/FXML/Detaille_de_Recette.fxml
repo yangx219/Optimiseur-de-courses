@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.embed.swing.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-image: #77bee4; -fx-border-radius: 30;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controle.DetailleRecette">
+
+   <children>
+      <Separator prefWidth="200.0" />
+      <Line disable="true" endX="200.0" layoutX="200.0" layoutY="62.0" startX="-200.0" strokeWidth="2.0">
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </Line>
+      <Text fx:id="nomRecette" fill="#835ce4" layoutX="74.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gratin de pates au poulet" wrappingWidth="309.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <BorderPane layoutX="112.0" layoutY="135.0" prefHeight="94.0" prefWidth="162.0" />
+      <BorderPane layoutX="54.0" layoutY="343.0" prefHeight="147.0" prefWidth="139.0" />
+      <Text fill="#6b39eb" layoutX="125.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-stroke-line-join: blue;" wrappingWidth="151.0">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <Button fx:id="cuisinier" layoutX="134.0" layoutY="512.0" mnemonicParsing="false" onAction="#cuisinier" style="-fx-background-color: lightgreen; -fx-border-color: Blue;" text="Cuisiner" textFill="#2985e1">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="boutonRevenierArriere" ellipsisString="&lt;" layoutX="6.0" layoutY="7.0" mnemonicParsing="false" onAction="#allerPageListeRecette" prefHeight="45.0" prefWidth="26.0" style="-fx-background-color: lightblue; -fx-background-radius: 50;" text="&lt;" textFill="#47804d">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <TextFlow layoutX="6.0" layoutY="143.0" prefHeight="362.0" prefWidth="390.0">
+         <children>
+            <ListView fx:id="listeIngredients" onMouseClicked="#afficherCouleur" prefHeight="368.0" prefWidth="389.0" />
+         </children></TextFlow>
+      <Button layoutX="28.0" layoutY="70.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="168.0" style="-fx-background-color: lightgreen; -fx-background-radius: 30px;" text="1 personne" textFill="#2985e1">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="diminierPersonne" ellipsisString="-" layoutX="211.0" layoutY="80.0" mnemonicParsing="false" onAction="#diminierPersonne" opacity="0.66" style="-fx-background-color: red; -fx-background-radius: 50;" text=" - ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="ajouterPersonne" ellipsisString="+" layoutX="259.0" layoutY="80.0" mnemonicParsing="false" onAction="#ajouterPersonne" opacity="0.48" prefHeight="3.0" prefWidth="18.0" style="-fx-background-color: yellow; -fx-background-radius: 50;" text="+" />
+   </children>
+</AnchorPane>

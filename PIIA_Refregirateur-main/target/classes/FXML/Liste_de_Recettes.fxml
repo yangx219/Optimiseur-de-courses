@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controle.ListeRecettes">
+   <children>
+      <Button fx:id="revenirArriereListeRecette" layoutX="14.0" layoutY="6.0" mnemonicParsing="false" onAction="#allerPageAccueil" style="-fx-background-color: lightblue; -fx-background-radius: 50;" text="&lt;" textFill="#47804d">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Button fx:id="ajouterRecette" layoutX="338.0" layoutY="6.0" mnemonicParsing="false" onAction="#allerPageAjouterRecette" style="-fx-background-color: yellow; -fx-background-radius: 50;" text="+" textFill="#47804d">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Line endX="400.0" layoutY="60.0" />
+      <ImageView fx:id="panier" fitHeight="51.0" fitWidth="59.0" layoutX="333.0" layoutY="535.0" onMouseClicked="#ajouterCourse" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/chariot.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="#835ce4" layoutX="101.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste de Recettes" textAlignment="CENTER" wrappingWidth="200.0">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <ListView fx:id="listeRecette" layoutX="14.0" layoutY="69.0" onMouseClicked="#afficheCouleur" prefHeight="448.0" prefWidth="378.0" />
+      <Button fx:id="boutonAfficher" layoutX="30.0" layoutY="533.0" mnemonicParsing="false" onMouseClicked="#afficherDetailleRecette" prefHeight="53.0" prefWidth="143.0" style="-fx-background-color: lightgreen; -fx-background-radius: 50;" text="Afficher">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Button fx:id="boutonSupprimer" layoutX="183.0" layoutY="534.0" mnemonicParsing="false" onMouseClicked="#supprimerRecette" prefHeight="50.0" prefWidth="143.0" style="-fx-background-radius: 50; -fx-background-color: red;" text="Supprimer">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
